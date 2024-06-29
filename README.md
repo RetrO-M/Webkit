@@ -38,7 +38,7 @@
 ### 🧵 Help
 
 ```bash
-root:~# ./webkit -h
+root:~# webkit -h
 
 usage: webkit.py [-h] [-s SUBDOMAIN] [-q SQL] [-x XSS] [-c CLICKJACKING] [-i INFO]
 
