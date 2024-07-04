@@ -26,7 +26,7 @@
 
 ### ❗ Disclaimers
 - No nonsense.
-- 
+
 ---------------------------------------
 
 <h4 align="center">Languages ➜</h5>
