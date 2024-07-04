@@ -2,14 +2,14 @@
 <div align="center">
   <kbd>
   <a href="https://github.com/RetrO-M">
-    <img src="img.png" alt="Logo" width="300" height="300">
+    <img src="img/img.png" alt="Logo" width="300" height="300">
   </a>
   </kbd>
   
   <h2 align="center">WEB KIT</h2>
 
   <p align="center">
-    V1.0 - (<b> by Fatal r00ted </b>)
+    V1.5 - (<b> by Fatal r00ted </b>)
     <br />
     <br />
     <a href="https://github.com/RetrO-M/Webkit/issues/">⚠️ Report Bug</a>
@@ -26,6 +26,7 @@
 
 ### ❗ Disclaimers
 - No nonsense.
+- 
 ---------------------------------------
 
 <h4 align="center">Languages ➜</h5>
@@ -37,69 +38,112 @@
 
 ### 🧵 Help
 
+
 ```bash
-root:~# webkit -h
-
-usage: webkit.py [-h] [-s SUBDOMAIN] [-q SQL] [-x XSS] [-c CLICKJACKING] [-i INFO]
-
-options:
-  -h, --help            show this help message and exit
-  -s SUBDOMAIN, --subdomain SUBDOMAIN
-  -q SQL, --sql SQL
-  -x XSS, --xss XSS
-  -c CLICKJACKING, --clickjacking CLICKJACKING
-  -i INFO, --info INFO
+• sql <URL>             -   SQL Injection Scanner
+• xss <URL>             -   XSS Scanner
+• subdomain <URL>       -   Subdomain Website
+• clickjacking <URL>    -   Clickjacking Scanner
+• get <domain.com>      -   Website Information
+• proxy <ip:port>       -   Proxy HTTP check
+• portscan <domain.com> -   Port Scanner
+• scrape <URL>          -   Web Scraper
+• file <URL>            -   show files
+• read <URL>            -   see all files
 ```
 
-```bash
-root:~# webkit -s domain.com
-==========================================
-[+] http://domain.com/login
-[+] http://domain.com/sms
-[+] http://domain.com/ipv4
-[+] http://domain.com/logout
-[-] http://domain.com/admin
-==========================================
-root:~# webkit -q http://domain.com/
-[*] Trying https://domain.com/"
-[*] Trying https://domain.com/'
-[+] Detected 0 forms on https://domain.com/.
+```
+webkit:~$ sql http://google.com/
+[*] Trying http://google.com/"
+[*] Trying http://google.com/'
+[+] Detected 1 forms on http://google.com/.
 
-root:~# webkit -x https://domain.com
-[+] Detected 1 forms on https://domain.com.
-[+] Submitting malicious payload to https://domain.com/search
-[+] Data: {'CENSURED': 'CENSURED', 'CENSURED': 'CENSURED', 'CENSURED': 'CENSURED', 'CENSURED': 'CENSURED', 'CENSURED': 'CENSURED', 'CENSURED': 'CENSURED', 'CENSURED': 'CENSURED'}
+webkit:~$ xss http://google.com/
+[+] Detected 1 forms on http://google.com/.
+[+] Submitting malicious payload to http://google.com/search
+[+] Data: {'NULL': 'Google NULL', 'NULL': 'NULL', 'NULL': 'NULL', 'source': 'NULL', 'NULL': 'NULL', 'NULL': 'NULL'}
 
-root:~# webkit -c domain.com
-[-] roblox.com is not vulnerable to clickjacking.
+webkit:~$ subdomain http://google.com/
+[-] http://google.com/signup
+[-] http://google.com/login
+[-] http://google.com/logout
+[-] http://google.com/database
+[-] http://google.com/secret
+[-] http://google.com/app
+[+] http://google.com/sms
+[-] http://google.com/ipv4
+
+webkit:~$ clickjacking http://google.com/
+[-] http://google.com/ is not vulnerable to clickjacking.
 [*] Response Headers:
-| BLABLALBA
-| BLABLALBA
-| BLABLALBA
-| BLABLALBA
-| BLABLALBA
-| BLABLALBA
+| Date:
+| Expires: 
+| Cache-Control:
+| Content-Type: 
+| Content-Security-Policy-Report-Only: 
+| Content-Encoding: 
+| Server: 
+| Content-Length: 
+| X-XSS-Protection: 0
+| X-Frame-Options: 
+| Set-Cookie: 
 
-root:~# webkit -i domain.com
-The IP <domain.com> is : [127.0.0.1]
-
-
-WEB KIT                                       V.1.0
-=====================================================
-IP : 127.0.0.1
+webkit:~$ get gooogle.com
+[+] NULL
+IP : ###.###.##.##
 STATUS : success
-COUNTRY : LOL
-COUNTRY CODE : LOL
-REGION : L
-CITY : LOL
-ZIP : LOL
-LAT : 50.###
-LON : 8.####
-TIMEZONE : Hide
-ISP NAME : Domain TEST
-=====================================================
+COUNTRY :
+COUNTRY CODE : 
+REGION :
+CITY : 
+ZIP : 
+LAT : 
+LON : 
+TIMEZONE : 
+ISP NAME : Google LLC
 
+webkit:~$ proxy 127.0.0.1:80 <--- HTTP PROXY
+{
+  'httpbin': '127.0.0.1'
+}
+
+webkit:~$ portscan google.com
+[*] Target IP address: 
+[*] Scanning ports on 
+[+] Port   |   1   |   open
+[+] Port   |   2   |   open
+[-] Port   |   3   |   closed
+[+] Port   |   4   |   open
+[+] Port   |   5   |   open
+[+] Port   |   6   |   open
+[+] Port   |   7   |   open
+
+webkit:~$ scrape http://google.com/
+CODE HERE
+
+webkit:~$ file http://google.com/
+[+] URL  |  FILE  |  CENSURED
+[+] URL  |  FILE  |  http://maps.google.nl/maps?########
+[+] URL  |  FILE  |  CENSURED
+[+] URL  |  FILE  |  https://www.youtube.com/#####
+[+] URL  |  FILE  |  CENSURED
+[+] URL  |  FILE  |  CENSURED
+[+] URL  |  FILE  |  CENSURED
+[+] URL  |  FILE  |  CENSURED
+[+] URL  |  FILE  |  CENSURED
+[+] URL  |  FILE  |  CENSURED
+[+] URL  |  FILE  |  CENSURED
+[+] URL  |  FILE  |  CENSURED
+[+] URL  |  FILE  |  CENSURED
+[+] URL  |  FILE  |  CENSURED
+[+] URL  |  FILE  |  CENSURED
+
+webkit:~$ read http://google.com/
+[+] URL  |  FILE  |  https://www.google.com/##############
+[*] Content of https://www.google.com/##############
+<h1>Hello world</h1>
 ```
+
 
 ---------------------------------------
 
@@ -107,6 +151,7 @@ ISP NAME : Domain TEST
 
 ```diff
 v1.0 ⋮ 29/06/2024
+v1.5 ⋮ 4/07/2024
 ```
 
 ---------------------------------------
@@ -120,6 +165,11 @@ Sql Injection Scanner
 XSS vulnerability scanner
 Clickjacking
 Get information about a site
+Proxy HTTP
+Port Scanner
+Web Scraper
+show files
+see all files
 ```
 
 ---------------------------------------
