@@ -9,7 +9,7 @@
   <h2 align="center">WEB KIT</h2>
 
   <p align="center">
-    V1.5 - (<b> by Fatal r00ted </b>)
+    V2.0 - (<b> by The Watcher </b>) I changed my username now it's "The Watcher"
     <br />
     <br />
     <a href="https://github.com/RetrO-M/Webkit/issues/">⚠️ Report Bug</a>
@@ -25,7 +25,7 @@
 ---------------------------------------
 
 ### ❗ Disclaimers
-- No nonsense.
+- I don't encourage anyone to hack, but don't play with hacking, it's illegal so we are not responsible.
 
 ---------------------------------------
 
@@ -34,115 +34,50 @@
            <img src="https://skillicons.dev/icons?i=py"/>
 </p>
 
+
+---------------------------------------
+
+- Don't forget when you are on the software to make a command you must do for example "sql http://google.com/" and then it's the same for the other commands, write "help" for the commands for better to understand
+
+### Example
+
+```r
+webkit:~# sql http://google.com/
+```
+
+```r
+webkit:~# get google.com
+```
+
 ---------------------------------------
 
 ### 🧵 Help
 
 
-```bash
-• sql <URL>             -   SQL Injection Scanner
-• xss <URL>             -   XSS Scanner
-• subdomain <URL>       -   Subdomain Website
-• clickjacking <URL>    -   Clickjacking Scanner
-• get <domain.com>      -   Website Information
-• proxy <ip:port>       -   Proxy HTTP check
-• portscan <domain.com> -   Port Scanner
-• scrape <URL>          -   Web Scraper
-• file <URL>            -   show files
-• read <URL>            -   see all files
+```js
+• sql <URL>              -   SQL Injection Scanner
+• xss <URL>              -   XSS Scanner
+• subdomain <URL>        -   Subdomain Website
+• clickjacking <URL>     -   Clickjacking Scanner
+• get <domain.com>       -   Website Information
+• proxy <ip:port>        -   Proxy HTTP check
+• portscan <domain.com>  -   Port Scanner
+• scrape <URL>           -   Web Scraper
+• file <URL>             -   show files
+• read <URL>             -   see all files
+• admin <URL>            -   Admin Finder
+• flag <URL>             -   Flag Finder
+• spy <URL>              -   monitor a website
+• ip <domain.com>        -   Show site IPs if they have changed
+• email <URL>            -   Recover emails
+• scan <URL>             -   Scan a website to get the flag.txt and root.txt and user.txt and robots.txt
+• rsql <URL/example.sql> -   read a .sql file on a website
+• search <URL/login>     -   search fields
+• dns <domain.com>       -   DNS Lookup
+
+• type <help all>
 ```
 
-```
-webkit:~$ sql http://google.com/
-[*] Trying http://google.com/"
-[*] Trying http://google.com/'
-[+] Detected 1 forms on http://google.com/.
-
-webkit:~$ xss http://google.com/
-[+] Detected 1 forms on http://google.com/.
-[+] Submitting malicious payload to http://google.com/search
-[+] Data: {'NULL': 'Google NULL', 'NULL': 'NULL', 'NULL': 'NULL', 'source': 'NULL', 'NULL': 'NULL', 'NULL': 'NULL'}
-
-webkit:~$ subdomain http://google.com/
-[-] http://google.com/signup
-[-] http://google.com/login
-[-] http://google.com/logout
-[-] http://google.com/database
-[-] http://google.com/secret
-[-] http://google.com/app
-[+] http://google.com/sms
-[-] http://google.com/ipv4
-
-webkit:~$ clickjacking http://google.com/
-[-] http://google.com/ is not vulnerable to clickjacking.
-[*] Response Headers:
-| Date:
-| Expires: 
-| Cache-Control:
-| Content-Type: 
-| Content-Security-Policy-Report-Only: 
-| Content-Encoding: 
-| Server: 
-| Content-Length: 
-| X-XSS-Protection: 0
-| X-Frame-Options: 
-| Set-Cookie: 
-
-webkit:~$ get gooogle.com
-[+] NULL
-IP : ###.###.##.##
-STATUS : success
-COUNTRY :
-COUNTRY CODE : 
-REGION :
-CITY : 
-ZIP : 
-LAT : 
-LON : 
-TIMEZONE : 
-ISP NAME : Google LLC
-
-webkit:~$ proxy 127.0.0.1:80 <--- HTTP PROXY
-{
-  'httpbin': '127.0.0.1'
-}
-
-webkit:~$ portscan google.com
-[*] Target IP address: 
-[*] Scanning ports on 
-[+] Port   |   1   |   open
-[+] Port   |   2   |   open
-[-] Port   |   3   |   closed
-[+] Port   |   4   |   open
-[+] Port   |   5   |   open
-[+] Port   |   6   |   open
-[+] Port   |   7   |   open
-
-webkit:~$ scrape http://google.com/
-CODE HERE
-
-webkit:~$ file http://google.com/
-[+] URL  |  FILE  |  CENSURED
-[+] URL  |  FILE  |  http://maps.google.nl/maps?########
-[+] URL  |  FILE  |  CENSURED
-[+] URL  |  FILE  |  https://www.youtube.com/#####
-[+] URL  |  FILE  |  CENSURED
-[+] URL  |  FILE  |  CENSURED
-[+] URL  |  FILE  |  CENSURED
-[+] URL  |  FILE  |  CENSURED
-[+] URL  |  FILE  |  CENSURED
-[+] URL  |  FILE  |  CENSURED
-[+] URL  |  FILE  |  CENSURED
-[+] URL  |  FILE  |  CENSURED
-[+] URL  |  FILE  |  CENSURED
-[+] URL  |  FILE  |  CENSURED
-[+] URL  |  FILE  |  CENSURED
-
-webkit:~$ read http://google.com/
-[+] URL  |  FILE  |  https://www.google.com/##############
-[*] Content of https://www.google.com/##############
-<h1>Hello world</h1>
-```
 
 
 ---------------------------------------
@@ -152,6 +87,7 @@ webkit:~$ read http://google.com/
 ```diff
 v1.0 ⋮ 29/06/2024
 v1.5 ⋮ 4/07/2024
+v2.0 ⋮ 9/07/2024
 ```
 
 ---------------------------------------
@@ -170,6 +106,15 @@ Port Scanner
 Web Scraper
 show files
 see all files
+admin finder
+flag finder
+monitor a website
+Show site IPs if they have changed
+email finder
+scan robots.txt, root.txt, flag.txt
+read a .sql file
+fields finder
+DNS Lookup
 ```
 
 ---------------------------------------
@@ -187,3 +132,4 @@ see all files
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=RetrO-M/Webkit&type=Date" />
  </picture>
 </a>
+
