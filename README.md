@@ -9,7 +9,7 @@
   <h2 align="center">WEB KIT</h2>
 
   <p align="center">
-    V2.0 - (<b> by The Watcher </b>) I changed my username now it's "The Watcher"
+    V2.5 - (<b> by demet0r </b>) I changed my username now it's "demet0r"
     <br />
     <br />
     <a href="https://github.com/RetrO-M/Webkit/issues/">⚠️ Report Bug</a>
@@ -74,8 +74,10 @@ webkit:~# get google.com
 • rsql <URL/example.sql> -   read a .sql file on a website
 • search <URL/login>     -   search fields
 • dns <domain.com>       -   DNS Lookup
-
-• type <help all>
+• robot <URL/robots.txt> -   retrieve paths disallowed to robots                                         
+• syn <ip>               -   Syn flood                                                                   
+• attack flag <URL>      -   See the hidden flags on the source code of the site or in robots.txt       
+• db <URL>               -   view sql database files
 ```
 
 
@@ -88,6 +90,7 @@ webkit:~# get google.com
 v1.0 ⋮ 29/06/2024
 v1.5 ⋮ 4/07/2024
 v2.0 ⋮ 9/07/2024
+v2.5 ⋮ 14/07/2024
 ```
 
 ---------------------------------------
@@ -115,6 +118,10 @@ scan robots.txt, root.txt, flag.txt
 read a .sql file
 fields finder
 DNS Lookup
+retrieve paths disallowed to robots 
+Syn Flood
+Attack flag
+view sql database files
 ```
 
 ---------------------------------------
@@ -132,4 +139,3 @@ DNS Lookup
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=RetrO-M/Webkit&type=Date" />
  </picture>
 </a>
-
