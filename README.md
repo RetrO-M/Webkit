@@ -2,7 +2,7 @@
 <div align="center">
   <kbd>
   <a href="https://github.com/RetrO-M">
-    <img src="img/img.png" alt="Logo" width="300" height="300">
+    <img src="img/img1.png" alt="Logo" width="300" height="300">
   </a>
   </kbd>
   
