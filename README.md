@@ -9,7 +9,7 @@
   <h2 align="center">WEB KIT</h2>
 
   <p align="center">
-    V2.5 - (<b> by demet0r </b>)
+    V3.0 - (<b> by demet0r </b>)
     <br />
     <br />
     <a href="https://github.com/RetrO-M/Webkit/issues/">⚠️ Report Bug</a>
