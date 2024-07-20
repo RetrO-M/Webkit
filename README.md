@@ -9,12 +9,14 @@
   <h2 align="center">WEB KIT</h2>
 
   <p align="center">
-    V2.5 - (<b> by demet0r </b>) I changed my username now it's "demet0r"
+    V2.5 - (<b> by demet0r </b>)
     <br />
     <br />
     <a href="https://github.com/RetrO-M/Webkit/issues/">⚠️ Report Bug</a>
   </p>
 </div>
+
+- I deleted some commands because they were useless...
 
 ---------------------------------------
 
@@ -42,11 +44,11 @@
 ### Example
 
 ```r
-webkit:~# sql http://google.com/
+webkit:~# sql http://example.com/
 ```
 
 ```r
-webkit:~# get google.com
+webkit:~# portscan example.com
 ```
 
 ---------------------------------------
@@ -54,30 +56,28 @@ webkit:~# get google.com
 ### 🧵 Help
 
 
-```js
-• sql <URL>              -   SQL Injection Scanner
-• xss <URL>              -   XSS Scanner
-• subdomain <URL>        -   Subdomain Website
-• clickjacking <URL>     -   Clickjacking Scanner
-• get <domain.com>       -   Website Information
-• proxy <ip:port>        -   Proxy HTTP check
-• portscan <domain.com>  -   Port Scanner
-• scrape <URL>           -   Web Scraper
-• file <URL>             -   show files
-• read <URL>             -   see all files
-• admin <URL>            -   Admin Finder
-• flag <URL>             -   Flag Finder
-• spy <URL>              -   monitor a website
-• ip <domain.com>        -   Show site IPs if they have changed
-• email <URL>            -   Recover emails
-• scan <URL>             -   Scan a website to get the flag.txt and root.txt and user.txt and robots.txt
-• rsql <URL/example.sql> -   read a .sql file on a website
-• search <URL/login>     -   search fields
-• dns <domain.com>       -   DNS Lookup
-• robot <URL/robots.txt> -   retrieve paths disallowed to robots                                         
-• syn <ip>               -   Syn flood                                                                   
-• attack flag <URL>      -   See the hidden flags on the source code of the site or in robots.txt       
-• db <URL>               -   view sql database files
+```go
+█████████████████████████████████████████████████████████████████████████████████████████████████
+█                                            Scanner                                            █
+█████████████████████████████████████████████████████████████████████████████████████████████████
+█ sql <URL>              ► SQL Injection Scanner                                                █
+█ xss <URL>              ► XSS Vulnerability Scanner                                            █
+█ subdomain <URL>        ► Subdomain Scanner                                                    █
+█ clickjacking <URL>     ► Clickjacking Scanner                                                 █
+█ portscan <domain>      ► Port Scanner                                                         █
+█████████████████████████████████████████████████████████████████████████████████████████████████
+█                                            Finder                                             █
+█████████████████████████████████████████████████████████████████████████████████████████████████
+█ admin <URL>            ► Admin Finder                                                         █
+█ file <URL>             ► show files                                                           █
+█ flag <URL>             ► See the hidden flags on the source code of the site or in robots.txt █
+█ search <URL>           ► Search fields                                                        █
+█ email <URL>            ► Email recovery                                                       █
+█████████████████████████████████████████████████████████████████████████████████████████████████
+█                                             Spy                                               █
+█████████████████████████████████████████████████████████████████████████████████████████████████
+█ spy <URL>              ► monitor a website                                                    █
+█████████████████████████████████████████████████████████████████████████████████████████████████
 ```
 
 
@@ -91,6 +91,7 @@ v1.0 ⋮ 29/06/2024
 v1.5 ⋮ 4/07/2024
 v2.0 ⋮ 9/07/2024
 v2.5 ⋮ 14/07/2024
+v3.0 ⋮ 20/07/2024
 ```
 
 ---------------------------------------
@@ -98,30 +99,22 @@ v2.5 ⋮ 14/07/2024
 ### 📣 Features
 
 ```diff
-+ WEBKIT Information
-Subdomain
-Sql Injection Scanner
-XSS vulnerability scanner
-Clickjacking
-Get information about a site
-Proxy HTTP
-Port Scanner
-Web Scraper
++ Webkit Scanner
+SQL Injection Scanner
+XSS Vulnerability Scanner
+Subdomain Scanner
+Clickjacking Scanner
+Port scanner
+
++ Webkit Finder
+Admin Finder
 show files
-see all files
-admin finder
-flag finder
+Flag Finder
+search fields
+email recovery
+
++ Webkit Spy
 monitor a website
-Show site IPs if they have changed
-email finder
-scan robots.txt, root.txt, flag.txt
-read a .sql file
-fields finder
-DNS Lookup
-retrieve paths disallowed to robots 
-Syn Flood
-Attack flag
-view sql database files
 ```
 
 ---------------------------------------
