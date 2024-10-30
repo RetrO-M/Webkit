@@ -16,7 +16,7 @@ proxies = {
 
 def email2(url):
     try:
-        response = requests.get(url)
+        response = requests.get(url, proxies=proxies)
         if response.status_code == 200:
             pattern = r'[\w\.-]+@[\w\.-]+'
             emails = set(re.findall(pattern, response.text))
