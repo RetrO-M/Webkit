@@ -73,7 +73,7 @@ class ascii:
 {Fore.LIGHTCYAN_EX} >→ {Fore.LIGHTWHITE_EX} tor sql       {Fore.LIGHTCYAN_EX}   >=─►{Fore.LIGHTWHITE_EX}   SQL Injection Scanner
 {Fore.LIGHTCYAN_EX} >→ {Fore.LIGHTWHITE_EX} tor email     {Fore.LIGHTCYAN_EX}   >=─►{Fore.LIGHTWHITE_EX}   Show emails on the website
 {Fore.LIGHTCYAN_EX} >→ {Fore.LIGHTWHITE_EX} tor admin     {Fore.LIGHTCYAN_EX}   >=─►{Fore.LIGHTWHITE_EX}   Admin Finder Scanner
-{Fore.LIGHTCYAN_EX} >→ {Fore.LIGHTWHITE_EX} tor subdomain {Fore.LIGHTCYAN_EX}   >=─►{Fore.LIGHTWHITE_EX}   Admin Finder Scanner
+{Fore.LIGHTCYAN_EX} >→ {Fore.LIGHTWHITE_EX} tor subdomain {Fore.LIGHTCYAN_EX}   >=─►{Fore.LIGHTWHITE_EX}   Subdomain Scanner
 
 {Fore.LIGHTCYAN_EX} >→ {Fore.LIGHTWHITE_EX} clear         {Fore.LIGHTCYAN_EX}   >=─►{Fore.LIGHTWHITE_EX}   Clear screen
 {Fore.LIGHTCYAN_EX} >→ {Fore.LIGHTWHITE_EX} help          {Fore.LIGHTCYAN_EX}   >=─►{Fore.LIGHTWHITE_EX}   Show commands
