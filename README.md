@@ -44,7 +44,7 @@ Web Hacking + Dark web Tool
  >→  tor sql          >=─►   SQL Injection Scanner
  >→  tor email        >=─►   Show emails on the website
  >→  tor admin        >=─►   Admin Finder Scanner
- >→  tor subdomain    >=─►   Admin Finder Scanner
+ >→  tor subdomain    >=─►   Subdomain Scanner
 
  >→  clear            >=─►   Clear screen
  >→  help             >=─►   Show commands
