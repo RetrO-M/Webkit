@@ -18,7 +18,10 @@ __Features:__
 ## 🔧 Setup 
 ```
 git clone https://github.com/RetrO-M/DeepTok
-cd WPForce
+cd DeepTok
+
+
+wpforce:~# ./setup.sh
 
 Install Python modules 
  - pip install -r requirements.txt
